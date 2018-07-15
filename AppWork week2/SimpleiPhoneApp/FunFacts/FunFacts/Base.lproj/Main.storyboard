@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NIM-oY-zD5">
+                                <rect key="frame" x="36" y="547" width="303" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yRQ-wN-R9a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <connections>
+                                    <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="3vC-Wg-kGL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are born with 300 bones; by the time you are an adult you will have 206" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rZw-pC-KL5">
+                                <rect key="frame" x="36" y="301.5" width="303" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dd-5m-m3n">
+                                <rect key="frame" x="36" y="160" width="117.5" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loremipsumdolorsitamet,consecteturadipiscingelit.Maecenastempus." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cs0-mH-W4p">
+                                <rect key="frame" x="36" y="432.5" width="303" height="64.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NIM-oY-zD5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="0Yh-cp-5qJ"/>
+                            <constraint firstItem="cs0-mH-W4p" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="81o-bB-pDe"/>
+                            <constraint firstItem="cs0-mH-W4p" firstAttribute="width" secondItem="rZw-pC-KL5" secondAttribute="width" id="G3h-jS-T5w"/>
+                            <constraint firstItem="rZw-pC-KL5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HlI-v8-4h1"/>
+                            <constraint firstItem="8dd-5m-m3n" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="RXZ-tn-J1H"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NIM-oY-zD5" secondAttribute="trailing" constant="20" id="UF7-zo-54i"/>
+                            <constraint firstItem="rZw-pC-KL5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="UdL-bM-1AJ"/>
+                            <constraint firstItem="8dd-5m-m3n" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="VZm-up-kve"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rZw-pC-KL5" secondAttribute="trailing" constant="20" id="Y9N-zI-0B4"/>
+                            <constraint firstItem="rZw-pC-KL5" firstAttribute="top" secondItem="8dd-5m-m3n" secondAttribute="bottom" constant="120" id="hJo-98-YuL"/>
+                            <constraint firstItem="NIM-oY-zD5" firstAttribute="top" secondItem="cs0-mH-W4p" secondAttribute="bottom" constant="50" id="iE0-kl-obA"/>
+                            <constraint firstItem="cs0-mH-W4p" firstAttribute="height" secondItem="rZw-pC-KL5" secondAttribute="height" id="mgM-Tw-yaz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cs0-mH-W4p" secondAttribute="trailing" constant="20" id="ocS-eF-KHr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NIM-oY-zD5" secondAttribute="bottom" constant="80" id="ozj-oF-ipg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="NIM-oY-zD5" id="8UT-uf-Jnc"/>
+                        <outlet property="funFactLabel" destination="rZw-pC-KL5" id="Tx9-od-Tzv"/>
+                        <outlet property="funFactLabel2" destination="cs0-mH-W4p" id="1Gn-O6-fEI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309.60000000000002" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+</document>
